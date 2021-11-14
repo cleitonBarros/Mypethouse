@@ -1,0 +1,205 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    color: #222222;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ img{
+     display: block;
+     width: 100%;
+ }
+ 
+*{
+    box-sizing: border-box;
+}
+/*supereior informação*/
+.superinfo-bg{
+    color : black;
+    background: Snow;
+    
+
+}
+.login{
+    height: 40px;
+    align-items: center;
+
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.login:hover{
+    background: rgb(163, 66, 163);
+    color: snow;
+
+}
+.superinfo{
+    max-width: 1024px;
+    height:5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.superinfo p, .superinfo a{
+    margin: 0 10px 10px 10px;
+    font-size:  1em;
+    line-height: 40px;
+
+}
+.superinfo a {
+    display: block;
+    margin: 5px 15px;
+    transform: uppercase;
+    cursor: pointer;
+}
+/* menu*/
+.header{
+    background:purple;
+}
+.menu{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 15px 0;
+    align-items: center;
+}
+.menu-nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+  
+.menu-nav li a{
+    color: White;;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: snow;
+    border: 1px solid Transparent;
+    border-radius: 50px;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    transition: 0.5s;
+}
+.menu-nav li a:hover{
+    background: rgb(163, 66, 163);
+    border: 1px solid rgb(207, 164, 207);
+
+}
+/*Banner*/
+.banner-dog{
+    background: url('img/dog1.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    height:500px;  
+    color: black;
+}
+.banner-cat{
+    background: url('img/pexels-tomas-ryant-2643812.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    height:500px;  
+    color: white;
+}
+.banner-bunny{
+    background: url('img/bunny4.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    height:500px;  
+    color: white;
+}
+.banner-bird{
+    background: url('img/brids4.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    height:500px;  
+}
+.title{
+    padding: 100px;
+    display: block;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center; 
+}
+/*perfil do animal*/
+.perfil{
+    background: white;
+}
+.perfil-text{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 65px 0;
+    
+} 
+.perfil-text h1{
+ color: purple;
+}
+.perfil-adp{
+    border-radius: 10px;
+    max-width: 1250px;
+    display: flex;
+    margin: 60px auto; ;
+}
+.perfil-adp > div{
+    flex: 1 1 300px;
+     margin: 10px;
+ }
+ .animal{
+     max-width:100%;
+     margin: 30px auto;  
+     background: snow
+ }
+ .animal li{
+    font-size: 16px;   
+    padding-bottom: 1px;
+ }
+ .animal li:nth-child(1){
+     font-weight: bold;
+ }
+ /*footer*/
+ footer{
+    display: flex;
+    align-items: center;
+    background:purple; 
+    height: 125px;
+}
+.footer p{
+    flex: 1;
+    text-align: center;
+    font-size:em;
+    color:#f5f5f5
+}
+/*animação*/
+@media(max-width:860px){
+
+    .banner{
+        background: url('img/dog1.jpg') no-repeat ;
+        background-size: cover;
+        height:500px;  
+       
+       
+    }
+    .perfil-adp{
+        flex-wrap: wrap;
+        
+        flex: 1 1 300px;
+    }
+}
