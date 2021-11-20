@@ -1,15 +1,269 @@
+/*reset*/
 
-
-html{
-    background:rgb(207, 164, 207);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Nunito", sans-serif;
+    
 }
-.first-content {
-    background-color: aliceblue;
-  
+/*background*/
+body{
+    background: linear-gradient( 40deg, rgb(163, 66, 163), rgb(207, 164, 207));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+/*login*/
+.titulo{
+    background: url('img/bannerlogin2.png') no-repeat;
+    background-size: cover;
+    min-width: 500px;
+    min-height: 425px;
+    padding: 2rem;
+    border-bottom-left-radius: 8px;
+   border-top-left-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;justify-content: center;
+   
+}
+.titulo h1{
+    color: snow;
+    font-weight: 700;
+}
+main.container{
+    background-color:#fff;
+    min-width: 320px;
+    min-height: 40vh;
+    padding:2rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
 
 }
-.second-content{
- display: none;
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width:25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient( 40deg, rgb(163, 66, 163), rgb(207, 164, 207));
+}
+/*form*/
 
+form{
+    display: flex;
+   flex-direction: column;
+}
+.second-form span {
+    font-size:0.85rem
+}
+.second-form h1{
+
+ 
+}
+/*inputs*/
+.input-field{
+    position: relative;
+      
+}
+form .input-field:first-child{
+    margin-bottom: 1.5rem;;
+}
+form .input-field:nth-child(2){
+    margin-bottom: 1.5rem;;
+}
+form .input-field:nth-child(3){
+    margin-bottom: 1.5rem;;
+}
+form .input-field:nth-child(4){
+    margin-bottom: 1.5rem;;
+}
+form .input-field:nth-child(5){
+    margin-bottom: 1.5rem;;
+}
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+
+
+}
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient( 40deg, rgb(163, 66, 163), rgb(207, 164, 207));
+    transform: scaleX(0);
+    transition: all  .3s ease-in-out;
+    transform-origin: left;
+}
+.input-field input:focus ~ .underline::after{
+    transform: ScaleX(1);
+
+}
+ .input-field input{
+    outline: none;
+    font-size: 0.9em;
+    color: rgba(0,0,0,10);
+    width: 100%;
+}
+.input_field input::placeholder{
+    color:rgba(0,0,0,0.2);
+}
+
+form input[type="submit"] {
+    margin-top:2rem;
+    padding: 0.4rem;
+    background: linear-gradient( to left, purple, rgb(163, 66, 163), rgb(207, 164, 207));
+    cursor: pointer;
+    color: #fff;
+    font-weight:300;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: all 0.55s ease;
+}
+form input[type="submit"]:hover{
+    letter-spacing:1px;
+    background: linear-gradient(to right, rgb(163, 66, 163), rgb(207, 164, 207))
+    
+
+}
+
+/*social media*/
+.footer{
+    display: flex;
+ flex-direction: column;
+    margin-top: 1rem;
+}
+.footer span a {
+    text-decoration: none;
+    color:rgba(0,0,0,0.7);
+}
+.footer span a:hover{
+    color: blue;
+
+}
+.second-form span  {
+    color: rgba(0,0,0,0.7);
+    font-size:0.8rem;
+    text-align: center;
+}
+ span a {
+    text-decoration: none;
+    color:rgba(0,0,0,0.7);
+    margin-top: 50px;
+     
+}
+ span a:hover{
+    color: blue;
+
+}
+.footer span{
+    color: rgba(0,0,0,0.7);
+    font-size:0.8rem;
+    text-align: center;
+}
+.social-field{
+    padding: 0.4rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.social-field  i{
+    margin: 0 0.5rem;
+    
+}
+.social-field a{
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+.social-field.facebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+.social-field.google{
+    background: linear-gradient(to right,red, rgb(240, 66, 66));
+
+}/*reponsividade */
+@media (max-width: 900px) {
+
+    .titulo{
+
+     
+    
+        background-size: cover;
+        min-width: 390px;
+        min-height: 425px;
+        padding: 2rem;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:center;
+     }
+
+    
+}
+@media (max-width: 750px){
+    body{
+        flex-direction: column;
+    }
+    
+    .titulo{
+        background:url('img/bannerLogin.jpg') no-repeat;
+        background-size: cover;
+        min-width: 320px;
+        min-height: 0px;
+        padding: 2rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        display: flex;
+        
+        text-align: center;
+        justify-content:center;
+     }
+
+     .titulo h1{
+         font-size: 25px;
+     }
+     main.container {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        
+    }
 
 }

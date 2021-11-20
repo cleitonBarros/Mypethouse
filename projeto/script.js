@@ -1,0 +1,4 @@
+function recuperarsenha(){
+    window.alert("")
+
+}

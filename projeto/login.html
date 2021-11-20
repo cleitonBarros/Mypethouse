@@ -1,71 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_login.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48995aa8ad.js" crossorigin="anonymous"></script>
+    <title>Login</title>
 </head>
 <body>
-    <div class="first-content row">
-        <div class="col s12 m6 push-m3">
-            <h3 class="light">Login</h3>
-            <form action="php_action/create.php" method="POST">
-                <div class="input-field col s12">
-                    <input type="text" name="nome" id="user">
-                    <label for="user">User</label>
+    <div class="titulo">
+        <h1> 🐕 My Pet House</h1>
+    </div>
+    <main class="container">
+    
+       <!--  <h2>Login</h2>
+        <form class="first-form" action="">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Enter Your Username">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                <div class="underline"></div>
+            </div>
+            <input type="submit" value="Sign In">
+        </form>
+
+
+        <div class="footer">
+            <span> <a href="http://" onclick=" recuperarsenha()">Create Account</a></span>
+            <span> <a  href="http://">Forget Your Password?</a></span>
+            <span>Or Connect With Social Media</span>
+            <div class="social-fields">
+                <div class="social-field facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-square"> Sign in with Facebook</i>
+                    </a>
                 </div>
-                <div class="input-field col s12">
-                    <input type="password" name="password" id="password">
-                    <label for="sobrenome">senha</label>
+                <div class="social-field google">
+                    <a href="#">
+                        <i class="fab fa-google"> Sign in with Google</i>
+                    </a>  
                 </div>
-                <button type="submit" name="btn-entrar"class="btn">Sing In</button>
-            </form>
-           
+            </div>
         </div>
 
-        <div class="second-content row ">
-            <div class="col s12 m6 push-m3">
-                <h3 class="light">Novo</h3>
-                <form action="php_action/create.php" method="POST">
-                    <div class="input-field col s12">
-                        <input type="text" name="nome" id="nome">
-                        <label for="nome">nome</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input type="text" name="sobrenome" id="sobrenome">
-                        <label for="sobrenome">sobrenome</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input type="text" name="email" id="email">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input type="text" name="idade" id="idade">
-                        <label for="idade">idade</label>
-                    </div>
-                    <button type="submit" name="btn-cadastrar"class="btn">Cadastrar</button>
-                    <a href="index.php"class="btn orange">Lista de clientes</a>
-                </form>
-               
+*/-->
+        <h2>Create Accont </h2>
+        <form class="second-form" action="">
+            <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <div class="underline"></div>
+            </div> <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Nome">
+                <div class="underline"></div>
             </div>
-    </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Senha">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="repassword" id="repassword" placeholder="Digite a senha novamente">
+                <div class="underline"></div>
+            </div>
         
+            <span> <input type="checkbox" name="" id=""> Termos de contrato </span>
+        
+            <input type="submit" value="Cadastrar">
+            <span> <a href="http://">Possuo uma conta</a></span>
+            
+        </form>
+    </main>
 
-
-
-
-
-    </div>
-
-
-
+ <script src="script.js"></script>
     
 </body>
 </html>
