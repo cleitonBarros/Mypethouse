@@ -27,14 +27,13 @@ body{
     background: url('img/bannerlogin2.png') no-repeat;
     background-size: cover;
     min-width: 500px;
-    min-height: 425px;
+    min-height: 428.5px;
     padding: 2rem;
     border-bottom-left-radius: 8px;
    border-top-left-radius: 8px;
    display: flex;
    flex-direction: column;
    align-items: center;justify-content: center;
-   
 }
 .titulo h1{
     color: snow;
@@ -71,13 +70,7 @@ form{
     display: flex;
    flex-direction: column;
 }
-.second-form span {
-    font-size:0.85rem
-}
-.second-form h1{
 
- 
-}
 /*inputs*/
 .input-field{
     position: relative;
@@ -86,18 +79,7 @@ form{
 form .input-field:first-child{
     margin-bottom: 1.5rem;;
 }
-form .input-field:nth-child(2){
-    margin-bottom: 1.5rem;;
-}
-form .input-field:nth-child(3){
-    margin-bottom: 1.5rem;;
-}
-form .input-field:nth-child(4){
-    margin-bottom: 1.5rem;;
-}
-form .input-field:nth-child(5){
-    margin-bottom: 1.5rem;;
-}
+
 .input-field .underline::before{
     content: '';
     position: absolute;
@@ -118,7 +100,7 @@ form .input-field:nth-child(5){
     left: 0;
     background: linear-gradient( 40deg, rgb(163, 66, 163), rgb(207, 164, 207));
     transform: scaleX(0);
-    transition: all  .3s ease-in-out;
+    transition: all  .8s ease-in-out;
     transform-origin: left;
 }
 .input-field input:focus ~ .underline::after{
@@ -166,11 +148,6 @@ form input[type="submit"]:hover{
 .footer span a:hover{
     color: blue;
 
-}
-.second-form span  {
-    color: rgba(0,0,0,0.7);
-    font-size:0.8rem;
-    text-align: center;
 }
  span a {
     text-decoration: none;
@@ -222,7 +199,7 @@ form input[type="submit"]:hover{
     
         background-size: cover;
         min-width: 390px;
-        min-height: 425px;
+        min-height: 428.5px;
         padding: 2rem;
         border-bottom-left-radius: 8px;
         border-top-left-radius: 8px;
